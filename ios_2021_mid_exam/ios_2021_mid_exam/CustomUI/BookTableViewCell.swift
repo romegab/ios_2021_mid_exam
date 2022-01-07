@@ -13,7 +13,7 @@ final class BookTableViewCell: UITableViewCell {
     @IBOutlet private weak var bookImageView: UIImageView!
     @IBOutlet weak var viewButton: UIButton!
     
-    private var book: Book? {
+    public var book: Book? {
         didSet {
             updateUI()
         }

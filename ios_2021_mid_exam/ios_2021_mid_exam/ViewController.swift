@@ -19,7 +19,7 @@ final class ViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        
+        tableView.register(UINib(nibName: "BookTableViewCell", bundle: nil), forCellReuseIdentifier: "BookCell")
     }
     
 }
@@ -31,7 +31,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BookCell") as! BookTableViewCell
+        cell.book = books[indexPath.row]
+        return cell
     }
     
 }

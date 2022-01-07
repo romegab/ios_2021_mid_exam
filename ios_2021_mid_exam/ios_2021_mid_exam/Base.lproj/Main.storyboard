@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qVZ-eW-smL">
-                                <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                                <rect key="frame" x="10" y="84" width="394" height="778"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio Library" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRb-WR-3qK">
@@ -38,8 +38,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qVZ-eW-smL" secondAttribute="bottom" id="27q-Lb-kJD"/>
                             <constraint firstItem="kRb-WR-3qK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5RF-FE-YqQ"/>
                             <constraint firstItem="kRb-WR-3qK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fc2-NQ-Lhy"/>
-                            <constraint firstItem="qVZ-eW-smL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GnY-Mt-aUY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qVZ-eW-smL" secondAttribute="trailing" id="NR7-po-O57"/>
+                            <constraint firstItem="qVZ-eW-smL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="GnY-Mt-aUY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qVZ-eW-smL" secondAttribute="trailing" constant="10" id="NR7-po-O57"/>
                             <constraint firstItem="qVZ-eW-smL" firstAttribute="top" secondItem="kRb-WR-3qK" secondAttribute="bottom" id="lo2-Pl-Svt"/>
                         </constraints>
                     </view>
