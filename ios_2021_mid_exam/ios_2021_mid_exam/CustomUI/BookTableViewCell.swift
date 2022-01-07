@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol BookTableViewCellDelegate {
+    func showBookPrviewView(book: Book)
+}
+
 final class BookTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var bookTitleLabel: UILabel!
@@ -18,6 +22,8 @@ final class BookTableViewCell: UITableViewCell {
             updateUI()
         }
     }
+    
+    public weak var delegate: ViewController?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -43,7 +49,9 @@ final class BookTableViewCell: UITableViewCell {
     }
     
     @IBAction private func viewButtonPressed(_ sender: UIButton) {
-        print("view button was pressed")
+        if let book = book {
+            delegate?.showBookPrviewView(book: book)
+        }
     }
     
 }
