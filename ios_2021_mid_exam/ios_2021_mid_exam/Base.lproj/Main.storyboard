@@ -45,15 +45,16 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="qVZ-eW-smL" id="HMe-Ll-CeQ"/>
+                        <segue destination="bgX-9Z-DqU" kind="presentation" modalPresentationStyle="fullScreen" id="Zcx-MK-PFF"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
         </scene>
-        <!--Boo-->
+        <!--Book Preview View Controller-->
         <scene sceneID="Lk1-WR-z6I">
             <objects>
-                <viewController id="bgX-9Z-DqU" customClass="Boo" sceneMemberID="viewController">
+                <viewController id="bgX-9Z-DqU" customClass="BookPreviewViewController" customModule="ios_2021_mid_exam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7uB-D4-B4S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,7 +87,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oax-kk-UcD">
-                                <rect key="frame" x="50" y="572.5" width="314" height="258.5"/>
+                                <rect key="frame" x="50" y="572.5" width="314" height="204.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -94,7 +95,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpe-70-P9a">
-                                <rect key="frame" x="20" y="851" width="392" height="31"/>
+                                <rect key="frame" x="20" y="797" width="392" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Rro-Cp-Z2a"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             </button>
@@ -103,7 +107,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="FVv-Xc-9J6" firstAttribute="trailing" secondItem="oax-kk-UcD" secondAttribute="trailing" constant="50" id="4xb-Bc-Ct8"/>
-                            <constraint firstItem="Gpe-70-P9a" firstAttribute="bottom" secondItem="FVv-Xc-9J6" secondAttribute="bottom" constant="20" id="HRk-4x-jhf"/>
                             <constraint firstItem="xJc-rK-1fi" firstAttribute="leading" secondItem="FVv-Xc-9J6" secondAttribute="leading" constant="20" id="ISH-sP-acd"/>
                             <constraint firstItem="FVv-Xc-9J6" firstAttribute="trailing" secondItem="pQt-ok-Gih" secondAttribute="trailing" constant="50" id="P0c-Cu-nuc"/>
                             <constraint firstItem="pQt-ok-Gih" firstAttribute="top" secondItem="xJc-rK-1fi" secondAttribute="bottom" constant="20" id="TeV-yf-8FR"/>
@@ -112,6 +115,7 @@
                             <constraint firstItem="FVv-Xc-9J6" firstAttribute="trailing" secondItem="Gpe-70-P9a" secondAttribute="trailing" constant="2" id="Zrn-rn-iZp"/>
                             <constraint firstItem="FVv-Xc-9J6" firstAttribute="trailing" secondItem="xJc-rK-1fi" secondAttribute="trailing" constant="20" id="aHy-i4-Ih0"/>
                             <constraint firstItem="oax-kk-UcD" firstAttribute="top" secondItem="Mhn-eo-GIJ" secondAttribute="bottom" constant="20" id="aqk-9a-CNp"/>
+                            <constraint firstItem="FVv-Xc-9J6" firstAttribute="bottom" secondItem="Gpe-70-P9a" secondAttribute="bottom" constant="20" id="bFB-om-ltD"/>
                             <constraint firstItem="oax-kk-UcD" firstAttribute="leading" secondItem="FVv-Xc-9J6" secondAttribute="leading" constant="50" id="baT-Fg-PUL"/>
                             <constraint firstItem="Gpe-70-P9a" firstAttribute="leading" secondItem="FVv-Xc-9J6" secondAttribute="leading" constant="20" id="bfF-Vy-Ll2"/>
                             <constraint firstItem="FVv-Xc-9J6" firstAttribute="trailing" secondItem="eql-Yy-8K4" secondAttribute="trailing" constant="50" id="ePM-WY-JEj"/>
@@ -122,6 +126,13 @@
                             <constraint firstItem="eql-Yy-8K4" firstAttribute="leading" secondItem="Mhn-eo-GIJ" secondAttribute="trailing" constant="20" id="ykQ-qP-N5Q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bookAuthorLabel" destination="Mhn-eo-GIJ" id="icp-qW-zOA"/>
+                        <outlet property="bookDescription" destination="oax-kk-UcD" id="nfu-RS-pbs"/>
+                        <outlet property="bookImageView" destination="pQt-ok-Gih" id="xdC-Vp-B8m"/>
+                        <outlet property="bookRating" destination="eql-Yy-8K4" id="bov-z3-l72"/>
+                        <outlet property="bookTitleLabel" destination="xJc-rK-1fi" id="Ip3-hu-rhS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNA-Qa-Jjo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
