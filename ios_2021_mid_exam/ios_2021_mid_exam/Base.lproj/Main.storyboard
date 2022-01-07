@@ -43,6 +43,9 @@
                             <constraint firstItem="qVZ-eW-smL" firstAttribute="top" secondItem="kRb-WR-3qK" secondAttribute="bottom" id="lo2-Pl-Svt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="qVZ-eW-smL" id="HMe-Ll-CeQ"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
