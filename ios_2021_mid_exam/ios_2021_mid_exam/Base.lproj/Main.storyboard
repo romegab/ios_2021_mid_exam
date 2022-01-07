@@ -45,7 +45,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="qVZ-eW-smL" id="HMe-Ll-CeQ"/>
-                        <segue destination="Mku-9H-ybJ" kind="presentation" identifier="ShowBookPreview" modalPresentationStyle="fullScreen" id="Zcx-MK-PFF"/>
+                        <segue destination="bgX-9Z-DqU" kind="presentation" identifier="ShowBookPreview" id="CJG-Vl-ftF"/>
                     </connections>
                 </viewController>
             </objects>
@@ -56,17 +56,17 @@
             <objects>
                 <viewController id="bgX-9Z-DqU" customClass="BookPreviewViewController" customModule="ios_2021_mid_exam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7uB-D4-B4S">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pQt-ok-Gih">
-                                <rect key="frame" x="50" y="158" width="314" height="392.5"/>
+                                <rect key="frame" x="50" y="70" width="314" height="392.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pQt-ok-Gih" secondAttribute="height" multiplier="8:10" id="a2u-9Z-sjm"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJc-rK-1fi">
-                                <rect key="frame" x="20" y="88" width="374" height="50"/>
+                                <rect key="frame" x="20" y="0.0" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="yRx-4n-5Eu"/>
                                 </constraints>
@@ -75,19 +75,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhn-eo-GIJ">
-                                <rect key="frame" x="50" y="575.5" width="252" height="21"/>
+                                <rect key="frame" x="50" y="487.5" width="252" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eql-Yy-8K4">
-                                <rect key="frame" x="322" y="575.5" width="42" height="21"/>
+                                <rect key="frame" x="322" y="487.5" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oax-kk-UcD">
-                                <rect key="frame" x="50" y="616.5" width="314" height="160.5"/>
+                                <rect key="frame" x="50" y="528.5" width="314" height="194.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -95,7 +95,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpe-70-P9a">
-                                <rect key="frame" x="20" y="797" width="392" height="45"/>
+                                <rect key="frame" x="20" y="743" width="392" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Rro-Cp-Z2a"/>
                                 </constraints>
@@ -138,24 +138,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNA-Qa-Jjo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1850.7246376811595" y="81.696428571428569"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="3DC-n4-CvJ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mku-9H-ybJ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ISG-19-mFA">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="bgX-9Z-DqU" kind="relationship" relationship="rootViewController" id="jIG-Lm-3Qo"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kel-cY-phX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="940.57971014492762" y="81.696428571428569"/>
         </scene>
     </scenes>
     <resources>

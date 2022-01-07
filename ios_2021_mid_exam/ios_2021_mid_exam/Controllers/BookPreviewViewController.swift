@@ -15,15 +15,11 @@ final class BookPreviewViewController: UIViewController {
     @IBOutlet private weak var bookRating: UILabel!
     @IBOutlet private weak var bookDescription: UITextView!
     
-    public var book: Book? {
-        didSet {
-            updateUI()
-        }
-    }
+    public var book: Book? 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        updateUI()
     }
     
     private func updateUI() {
